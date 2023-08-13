@@ -1,0 +1,51 @@
+* {
+    color: limegreen;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.navbar, .content {
+    background-color: black;
+    padding: 0 10px 10px 10px;
+    border: limegreen solid;
+    border-radius: 20px;
+    height: 500px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+}
+.item-menu {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    border: solid 1px black;
+    padding: 5px 0 5px 0;
+}
+
+a {
+    color: limegreen;
+}
+
+.profil-picture {
+    display: flex;
+    justify-content: center;
+}
+img {
+    margin-top: 10px;
+    object-fit: fill;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: limegreen solid;
+}
+
+.content {
+    padding: 0 10px 10px 10px;
+}
+
+

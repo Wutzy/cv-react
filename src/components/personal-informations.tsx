@@ -5,7 +5,6 @@ interface CarteProps {
     prenom: string;
     nom: string;
     titre: string;
-    age: number;
     adresse: string;
     telephone: string;
     email: string;
