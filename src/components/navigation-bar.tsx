@@ -1,20 +1,39 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, useState } from 'react';
+import { Link } from 'react-router-dom';
 import './navigation-bar.css';
-import ItemMenu from './Item-menu';
+
+interface MenuItem {
+    label: string;
+    value: string;
+    path: string;
+    isSelected: boolean;
+}
 
 const NavBar: FunctionComponent = () => {
+    const [menuItems, setMenuItems] = useState<MenuItem[]>([
+        { label: 'Accueil', value: 'Accueil', path: '/', isSelected: true },
+        { label: 'Experiences', value: 'Experiences', path: '/knowledges', isSelected: false },
+        { label: 'Portfolio', value: 'Portfolio', path: '/Portfolio', isSelected: false },
+        { label: 'Contact', value: 'Contact', path: '/contact', isSelected: false}
+    ]);
+
+    const handleItemClick = (value: string) => {
+        const updatedItems = menuItems.map(item => ({...item,
+        isSelected: item.value === value
+     }));
+     setMenuItems(updatedItems);
+    };
 
     return (
         <div className='navbar col s5 m4'>
             <div className='profil-picture'>
                 <img src="https://etudestech.com/wp-content/uploads/2023/02/les-10-plus-grands-hackers-de-lhistoire-1536x1024.jpeg" alt="hacker" className='picture-profile' />
             </div>
-            <ul className='menu row'>
-                <ItemMenu path="/" icon="home" name="Accueil" />
-                <ItemMenu path="/knowledges" icon="folder" name="Experiences" />
-                <ItemMenu path="/portfolio" icon="folder" name="Portfolio" />
-                <ItemMenu path="/contact" icon="contacts" name="Contact" />
-            </ul>
+            {menuItems.map(item => (
+                <div key={item.value} className={`menu-item ${item.isSelected ? 'selected' : ''}`} onClick={() => handleItemClick(item.value)}>
+                    <Link to={item.path}>{item.label}</Link>
+                </div>
+            ))}
         </div>
     );
 };
