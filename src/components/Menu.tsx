@@ -9,7 +9,7 @@ interface MenuItem {
     isSelected: boolean;
 }
 
-const NavBar: FunctionComponent = () => {
+const Menu: FunctionComponent = () => {
     const [menuItems, setMenuItems] = useState<MenuItem[]>([
         { label: 'Accueil', value: 'Accueil', path: '/', isSelected: true },
         { label: 'Experiences', value: 'Experiences', path: '/knowledges', isSelected: false },
@@ -25,7 +25,7 @@ const NavBar: FunctionComponent = () => {
     };
 
     return (
-        <div className='navbar col s5 m4'>
+        <div className='menu col s5 m4'>
             <div className='profil-picture'>
                 <img src="https://etudestech.com/wp-content/uploads/2023/02/les-10-plus-grands-hackers-de-lhistoire-1536x1024.jpeg" alt="hacker" className='picture-profile' />
             </div>
@@ -38,4 +38,4 @@ const NavBar: FunctionComponent = () => {
     );
 };
 
-export default NavBar;
+export default Menu;

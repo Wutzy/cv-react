@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Knowledges from './pages/knowledges';
 import Portfolio from './pages/portfolio';
 import Contact from './pages/contact';
-import NavBar from './components/navigation-bar';
+import Menu from './components/Menu';
 import PageNotFound from './pages/page-not-found';
 
 
@@ -12,7 +12,7 @@ const App : FunctionComponent = () => {
   return (
     <Router>
       <div className="container row">
-        <NavBar />
+        <Menu />
         <div className="content col s5 m7">
           <Routes>
             <Route path = "/" element={<Home />}/>

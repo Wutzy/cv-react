@@ -8,16 +8,12 @@
     margin-top: 20px;
 }
 
-.navbar, .content {
+.menu, .content {
     background-color: black;
     padding: 0 10px 10px 10px;
     border: limegreen solid;
     border-radius: 20px;
     height: 500px;
-}
-.menu {
-    display: flex;
-    flex-direction: column;
 }
 
 .menu-item > a {
