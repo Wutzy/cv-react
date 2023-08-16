@@ -1,14 +1,4 @@
-* {
-    color: limegreen;
-    font-weight: bold;
-}
-
-.container {
-    display: flex;
-    margin-top: 20px;
-}
-
-.menu, .content {
+.menu {
     background-color: black;
     padding: 0 10px 10px 10px;
     border: limegreen solid;
@@ -24,7 +14,8 @@
     display: flex;
     justify-content: center;
 }
-img {
+
+.profil-picture > img {
     margin-top: 10px;
     object-fit: fill;
     width: 150px;
@@ -33,13 +24,7 @@ img {
     border: limegreen solid;
 }
 
-.content {
-    padding: 0 10px 10px 10px;
-}
-
 .selected > a {
     text-decoration: underline;
     padding: 5px;
 }
-
-

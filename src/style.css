@@ -1,0 +1,24 @@
+* {
+    color: limegreen;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.content {
+    background-color: black;
+    padding: 0 10px 10px 10px;
+    border: limegreen solid;
+    border-radius: 20px;
+    height: 500px;
+}
+
+
+
+
+
+
+
