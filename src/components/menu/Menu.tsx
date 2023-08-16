@@ -1,6 +1,6 @@
 import { FunctionComponent, useState } from 'react';
 import { Link } from 'react-router-dom';
-import './navigation-bar.css';
+import './menu.css';
 
 interface MenuItem {
     label: string;
@@ -25,7 +25,7 @@ const Menu: FunctionComponent = () => {
     };
 
     return (
-        <div className='menu col s5 m4'>
+        <div className='menu col s3 m3'>
             <div className='profil-picture'>
                 <img src="https://etudestech.com/wp-content/uploads/2023/02/les-10-plus-grands-hackers-de-lhistoire-1536x1024.jpeg" alt="hacker" className='picture-profile' />
             </div>

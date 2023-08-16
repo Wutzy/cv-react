@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import Project from '../models/project';
+import Project from '../../models/project';
 
 
 type Props = {
@@ -7,10 +7,10 @@ type Props = {
 }
 
 const ProjectCard: FunctionComponent<Props> = ({project}) => {
-    
+
     return (
         <div className='col s4'>
-
+            <h3>{project.name}</h3>
         </div>
     );
 };

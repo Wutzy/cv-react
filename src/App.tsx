@@ -1,11 +1,12 @@
 import React, { FunctionComponent } from 'react';
-import Home from './pages/home';
+import Home from './pages/Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Knowledges from './pages/knowledges';
-import Portfolio from './pages/portfolio';
-import Contact from './pages/contact';
-import Menu from './components/Menu';
-import PageNotFound from './pages/page-not-found';
+import Knowledges from './pages/Knowledges';
+import Portfolio from './pages/Portfolio';
+import Contact from './pages/Contact';
+import Menu from './components/menu/Menu';
+import PageNotFound from './pages/Page-not-found';
+import './style.css';
 
 
 const App : FunctionComponent = () => {
@@ -13,7 +14,7 @@ const App : FunctionComponent = () => {
     <Router>
       <div className="container row">
         <Menu />
-        <div className="content col s5 m7">
+        <div className="content col s5 m8 center">
           <Routes>
             <Route path = "/" element={<Home />}/>
             <Route path = "/knowledges" element={<Knowledges />}/>
