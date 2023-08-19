@@ -2,6 +2,7 @@ import React, { FunctionComponent, useState, useEffect } from 'react';
 import ProjectCard from '../components/portfolio/Project-card';
 import Project from '../models/project';
 import PROJECTS from '../models/mock-project';
+import { Link } from 'react-router-dom';
 
 const Portfolio: FunctionComponent = () => {
 
@@ -17,7 +18,7 @@ const Portfolio: FunctionComponent = () => {
             </h2>
             <div className='row'>
             {projects.map(project => (
-                <ProjectCard key={project.id} project={project} />
+                <ProjectCard key={project.id} project={project} />                
             ))}
             </div>
         </div>

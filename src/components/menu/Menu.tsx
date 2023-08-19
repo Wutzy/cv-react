@@ -31,7 +31,7 @@ const Menu: FunctionComponent = () => {
             </div>
             {menuItems.map(item => (
                 <div key={item.value} className={`menu-item ${item.isSelected ? 'selected' : ''}`} onClick={() => handleItemClick(item.value)}>
-                    <Link to={item.path}>{item.label}</Link>
+                    <Link to={item.path}><i className='material-icons'>folder</i>{item.label}</Link>
                 </div>
             ))}
         </div>
