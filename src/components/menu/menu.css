@@ -1,13 +1,13 @@
 .menu {
     background-color: black;
     padding: 0 10px 10px 10px;
-    border: limegreen solid;
+    border: #00FF00  solid;
     border-radius: 20px;
-    height: 500px;
+    margin-right: 20px;
 }
 
 .menu-item > a {
-    color: lime;
+    color: #00FF00;
 }
 
 .profil-picture {
@@ -21,7 +21,7 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: limegreen solid;
+    border: #00FF00  2px solid;
 }
 
 .selected > a {

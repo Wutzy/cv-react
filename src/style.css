@@ -1,19 +1,37 @@
 * {
-    color: limegreen;
+    color: #00FF00;
     font-weight: bold;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html {
+    background-color: black;
 }
 
 .container {
     display: flex;
-    margin-top: 20px;
+    margin: 15px 0;
+    height: 875px;
+    width: 100%;
 }
 
 .content {
     background-color: black;
     padding: 0 10px 10px 10px;
-    border: limegreen solid;
+    border: #00FF00 solid;
     border-radius: 20px;
-    height: 500px;
+    width: 100%;
+}
+
+.download-icon {
+    border: 3px solid #00FF00;
+    border-radius: 20px;
+    padding: 5px;
 }
 
 

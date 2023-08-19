@@ -12,9 +12,9 @@ import './style.css';
 const App : FunctionComponent = () => {
   return (
     <Router>
-      <div className="container row">
+      <div className="container">
         <Menu />
-        <div className="content col s5 m8 center">
+        <div className="content center">
           <Routes>
             <Route path = "/" element={<Home />}/>
             <Route path = "/knowledges" element={<Knowledges />}/>
