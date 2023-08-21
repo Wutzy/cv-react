@@ -4,6 +4,7 @@
     justify-content: start;
     background-color: black;
     border: solid 1px #00FF00;
+    border-radius: 10px;
     height: 350px;
 
 }

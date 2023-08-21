@@ -25,15 +25,30 @@ const Menu: FunctionComponent = () => {
     };
 
     return (
-        <div className='menu col s3 m3'>
-            <div className='profil-picture'>
-                <img src="https://etudestech.com/wp-content/uploads/2023/02/les-10-plus-grands-hackers-de-lhistoire-1536x1024.jpeg" alt="hacker" className='picture-profile' />
-            </div>
-            {menuItems.map(item => (
-                <div key={item.value} className={`menu-item ${item.isSelected ? 'selected' : ''}`} onClick={() => handleItemClick(item.value)}>
-                    <Link to={item.path}><i className='material-icons'>folder</i>{item.label}</Link>
+        <div className='col s3 m3'>
+            <div className='menu-burger'>
+                <div className='menu-burger-open'>
+                    {menuItems.map(item => (
+                        <div key={item.value} className={`menu-item ${item.isSelected ? 'selected' : ''}`} onClick={() => handleItemClick(item.value)}>
+                            <Link to={item.path}>{item.label}</Link>
+                        </div>
+                    ))}
                 </div>
-            ))}
+                <div className='menu-burger-closed'>
+                    <i className="material-icons">menu</i>
+                </div>
+            </div>
+            <div className='menu'>
+                <div className='profil-picture'>
+                    <img src="https://etudestech.com/wp-content/uploads/2023/02/les-10-plus-grands-hackers-de-lhistoire-1536x1024.jpeg" alt="hacker" className='picture-profile' />
+                </div>
+                {menuItems.map(item => (
+                    <div key={item.value} className={`menu-item ${item.isSelected ? 'selected' : ''}`} onClick={() => handleItemClick(item.value)}>
+                        <Link to={item.path}><i className='material-icons'>folder</i>{item.label}</Link>
+                    </div>
+                ))}        
+            </div>
+
         </div>
     );
 };
