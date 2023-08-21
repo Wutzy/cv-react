@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react';
-import Carte from '../components/Contact-card';
+import Carte from '../components/contact-card';
 
 const Contact: FunctionComponent = () => {
     return (

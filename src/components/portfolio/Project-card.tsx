@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import Project from '../../models/project';
-import './Project-card.css'
+import './project-card.css'
 import { Link } from 'react-router-dom';
 
 
@@ -11,7 +11,7 @@ type Props = {
 const ProjectCard: FunctionComponent<Props> = ({project}) => {
 
     return (
-        <div className='col s4'>
+        <div className='col s12 m4'>
             <Link to='/'>
                 <div className='card'>
                     <div className='card-title'>{project.name}</div>
