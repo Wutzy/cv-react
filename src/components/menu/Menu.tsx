@@ -6,15 +6,16 @@ interface MenuItem {
     label: string;
     value: string;
     path: string;
+    icon: string;
     isSelected: boolean;
 }
 
 const Menu: FunctionComponent = () => {
     const [menuItems, setMenuItems] = useState<MenuItem[]>([
-        { label: 'Accueil', value: 'Accueil', path: '/', isSelected: true },
-        { label: 'Experiences', value: 'Experiences', path: '/knowledges', isSelected: false },
-        { label: 'Portfolio', value: 'Portfolio', path: '/Portfolio', isSelected: false },
-        { label: 'Contact', value: 'Contact', path: '/contact', isSelected: false}
+        { label: 'Accueil', value: 'Accueil', path: '/', icon: 'home', isSelected: true },
+        { label: 'Experiences', value: 'Experiences', path: '/knowledges', icon: 'dataset', isSelected: false },
+        { label: 'Portfolio', value: 'Portfolio', path: '/Portfolio', icon: 'folder', isSelected: false },
+        { label: 'Contact', value: 'Contact', path: '/contact', icon: 'contacts', isSelected: false}
     ]);
 
     const handleItemClick = (value: string) => {
@@ -44,7 +45,7 @@ const Menu: FunctionComponent = () => {
                 </div>
                 {menuItems.map(item => (
                     <div key={item.value} className={`menu-item ${item.isSelected ? 'selected' : ''}`} onClick={() => handleItemClick(item.value)}>
-                        <Link to={item.path}><i className='material-icons'>folder</i>{item.label}</Link>
+                        <i className='material-icons'>{item.icon}</i><Link to={item.path}>{item.label}</Link>
                     </div>
                 ))}        
             </div>

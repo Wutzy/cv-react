@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import Project from '../../models/project';
 import './project-card.css'
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 type Props = {
@@ -10,9 +10,14 @@ type Props = {
 
 const ProjectCard: FunctionComponent<Props> = ({project}) => {
 
+    const navigate = useNavigate();
+
+    const goToProject = (id: number) => {
+        navigate(`/portfolio/${id}`);
+      }
+
     return (
-        <div className='col s12 m4'>
-            <Link to='/'>
+        <div className='col s12 m4' onClick={() => goToProject(project.id)}>
                 <div className='card'>
                     <div className='card-title'>{project.name}</div>
                     <div className='card-img'>
@@ -28,7 +33,6 @@ const ProjectCard: FunctionComponent<Props> = ({project}) => {
                         </div>    
                     </div>
                 </div>
-            </Link>
         </div>
     );
 };
