@@ -25,6 +25,7 @@ html {
 .container {
     margin: 20px 0;
     width: 100%;
+    min-height: 300px;
 }
 
 .row {
@@ -50,9 +51,10 @@ html {
         flex-direction: column;
         justify-content: center;
         background-color: black;
-        padding-top: 50px;
+        padding: 50px 50px 50px 50px;
         border: #00FF00 solid;
-        border-radius: 20px;
+        border-left: none;
+        border-radius: 20px 20px 20px 20px;
         width: 100%;        
     }
 }
