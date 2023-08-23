@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import Home from './pages/home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Knowledges from './pages/knowledges';
+import Knowledges from './pages/knowledges/knowledges';
 import Portfolio from './pages/portfolio';
 import Contact from './pages/contact';
 import Menu from './components/menu/Menu';
@@ -15,7 +15,7 @@ const App : FunctionComponent = () => {
     <Router>
       <div className="container">
         <Menu />
-        <div className="content center">
+        <div className="content">
           <Routes>
             <Route path = "/" element={<Home />}/>
             <Route path = "/knowledges" element={<Knowledges />}/>
