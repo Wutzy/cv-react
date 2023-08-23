@@ -2,17 +2,17 @@ export default class Skill {
 
     id: number;
     name: string;
-    progress?: number;
+    years: number;
      
     constructor(
      id: number,
      name: string = '...',
-     progress: number
+     years: number
     ) 
-    
+
     {
      this.id = id;
      this.name = name;
-     this.progress = progress;
+     this.years = years;
     }
 }

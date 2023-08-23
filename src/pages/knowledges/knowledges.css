@@ -1,0 +1,22 @@
+
+.s12 > h4 {
+    margin-bottom: 30px;
+}
+
+.skill-box {
+    border: 1px solid lime;
+    border-right: none;
+    border-left: none;
+    border-radius: 20px 20px 20px 20px;
+    padding: 10px;
+
+}
+
+.xp1, .xp2 {
+    display:flex;
+    justify-content: flex-end;
+}
+
+.xp1::after{
+    border: 5px solid red;
+}

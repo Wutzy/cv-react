@@ -3,23 +3,28 @@ import Skill from './skill';
 export const SKILLS: Skill[] = [
  {
     id: 1,
-    name: "Projet 1",
-    progress: 0
+    name: "HTML5",
+    years: 100
  },
  {
-    id: 1,
-    name: "Projet 1",
-    progress: 0
+    id: 2,
+    name: "CSS3",
+    years: 100
  },
  {
-    id: 1,
-    name: "Projet 1",
-    progress: 0
+    id: 2,
+    name: "JavaScript",
+    years: 40
  },
  {
-    id: 1,
-    name: "Projet 1",
-    progress: 0
+    id: 3,
+    name: "TypeScript",
+    years: 8
+ },
+ {
+    id: 4,
+    name: "React",
+    years: 20
  }
 ];
   
