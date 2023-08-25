@@ -1,6 +1,7 @@
 import { FunctionComponent } from 'react';
 import SkillPannel from '../../components/knowledges/skills/skill-pannel';
 import getSkills from '../../helpers/get-skills';
+import ExperiencesPannel from '../../components/knowledges/experiences/exp-pannel';
 import './knowledges.css'
 
 const Knowledges: FunctionComponent = () => {
@@ -16,11 +17,9 @@ const Knowledges: FunctionComponent = () => {
                     <SkillPannel skills = {ToolsSkills} title='Outils'/>   
                 </div>
                 <div className='col s12 m6 others'>
-
+                    <ExperiencesPannel />
                 </div>
-            </div>
-            
-            
+            </div>               
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useState, useEffect } from 'react';
 import ProjectCard from '../components/portfolio/project-card';
 import Project from '../models/project';
-import PROJECTS from '../models/mock-projects';
+import PROJECTS from '../models/mocked-data/mock-projects';
 
 const Portfolio: FunctionComponent = () => {
 
