@@ -1,6 +1,6 @@
 import { FunctionComponent, useState, useEffect } from "react";
 import Project from "../../models/project";
-import PROJECTS from "../../models/mock-project";
+import PROJECTS from "../../models/mock-projects";
 import {useParams} from 'react-router-dom';
 import './project-details.css'
 

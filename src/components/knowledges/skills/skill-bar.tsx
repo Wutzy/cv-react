@@ -1,7 +1,6 @@
 import { FunctionComponent } from "react";
-import React from 'react';
-import Skill from "../../models/skill";
-import './skill-bar.css'
+import './skill-bar.css';
+import Skill from "../../../models/skill";
 
 type SkillProps = {
     skill: Skill;
@@ -14,7 +13,11 @@ const SkillBar: FunctionComponent<SkillProps> = ({skill}) => {
                 <div className="skill-title">
                     {skill.name}
                 </div>
-                <div className="skill-progress-bar" style={{ width: skill.years + '%' }}>
+                <div className="skill-progress-bar">
+                    <div className="bla" style={{ width: skill.xp + '%' }}>
+                        <div className="progress-bar-animated">
+                        </div>                    
+                    </div>
                 </div>
             </div>
     );
