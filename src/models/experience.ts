@@ -1,6 +1,7 @@
 export default class Experience {
 
     id: number;
+    type: string;
     name_corporation: string;
     post_name: string;
     date_entry: Date;
@@ -8,6 +9,7 @@ export default class Experience {
      
     constructor(
      id: number,
+     type: string = "jobtype",
      name_corporation: string = 'string',
      post_name: string = 'string',
      date_entry: Date = new Date(),
@@ -16,6 +18,7 @@ export default class Experience {
 
     {
      this.id = id;
+     this.type = type;
      this.name_corporation = name_corporation;
      this.post_name = post_name;
      this.date_entry = date_entry;

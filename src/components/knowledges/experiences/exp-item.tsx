@@ -1,6 +1,8 @@
 import { FunctionComponent } from 'react';
 import Experience from '../../../models/experience';
 import getDuration from '../../../helpers/get-duration';
+import formatDate from '../../../helpers/format-date';
+import './exp-item.css';
 
 type ExperienceProps = {
     experience: Experience;
@@ -9,12 +11,9 @@ type ExperienceProps = {
 const ExperienceItem: FunctionComponent<ExperienceProps> = ({experience}) => {
     return (
         <div>
-            <p>{experience.name_corporation}</p>
-            <p>{experience.post_name}</p>            
-            <p>{experience.date_entry.getDay()}</p> 
-            <p>{experience.date_release.getTime()}</p>
-            <p>{getDuration(experience.date_release, experience.date_entry)/(1000 * 3600 * 24)}</p>
-            
+            <p>{experience.name_corporation}: {experience.post_name}</p>                        
+            <span>De { formatDate(experience.date_entry) +' à ' +  formatDate(experience.date_release)}</span> 
+            <span>({getDuration(experience.date_release, experience.date_entry)} mois)</span>        
         </div>
     );
 };

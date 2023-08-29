@@ -31,23 +31,17 @@ export const SKILLS: Skill[] = [
     xp: 8,
     type: "language"
  },
- {
+{
    id: 5,
-   name: "React",
-   xp: 25,
-   type: "tools"
+   name: "phpMyAdmin",
+   xp: 10,
+   type: "language"
 },
 {
    id: 6,
-   name: "phpMyAdmin",
-   xp: 10,
-   type: "tools"
-},
-{
-   id: 7,
    name: "Composer",
    xp: 10,
-   type: "tools"
+   type: "language"
 }
 ];
   

@@ -13,11 +13,11 @@ const Knowledges: FunctionComponent = () => {
         <div>
             <div className="row">
                 <div className="col s12 m6 languages">
-                    <SkillPannel skills = {LanguageSkills} title='Language'/>
-                    <SkillPannel skills = {ToolsSkills} title='Outils'/>   
+                    <SkillPannel skills = {LanguageSkills} title='Languages & Outils'/>
+                    <ExperiencesPannel title='Formation' experienceType = 'formation'/>
                 </div>
                 <div className='col s12 m6 others'>
-                    <ExperiencesPannel />
+                <ExperiencesPannel title='Experiences' experienceType = 'job'/>
                 </div>
             </div>               
         </div>
