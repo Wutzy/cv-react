@@ -1,0 +1,17 @@
+.exp-item {
+    border: 1px dotted lime;
+    padding-bottom: 10px;
+    border-right: none;
+    border-left: none;
+}
+.exp-item > p {
+    margin: 0;
+}
+
+.exp-item:first-of-type{
+    border-top: none;
+}
+
+.exp-item:last-of-type{
+    border-bottom: none;
+}

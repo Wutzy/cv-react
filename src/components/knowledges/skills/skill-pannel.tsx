@@ -1,6 +1,5 @@
-import React, { FunctionComponent, useEffect, useState } from 'react';
+import { FunctionComponent } from 'react';
 import Skill from '../../../models/skill';
-import SKILLS from '../../../models/mock-skills';
 import SkillBar from './skill-bar';
 
 type SkillProps = {

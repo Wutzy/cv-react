@@ -3,7 +3,7 @@
     margin-bottom: 30px;
 }
 
-.skill-box {
+.skill-box, .exp-box {
     border: 1px solid lime;
     border-right: none;
     border-left: none;
