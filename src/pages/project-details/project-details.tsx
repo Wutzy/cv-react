@@ -22,16 +22,15 @@ const ProjectDetails: FunctionComponent = () => {
       return (
         <div>
             { project ? (
-                <div>
+                <div className="center">
                     <img src={project.picture} alt={project.name} />
-                    <h3>{project.name}</h3>
+                    <h4>{project.name}</h4>
                     <ul className="project-details-techno">
                         {project.types.map(type => (
                           <li key={type} className='types'>{type}</li>
                         ))}
                     </ul>
-                    <p>{project.description}</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, provident!</p>
+                    <p className="project-details-description">{project.description}Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, provident!</p>
                 </div>
 
             ) : (

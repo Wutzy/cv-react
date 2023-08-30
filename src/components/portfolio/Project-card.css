@@ -13,7 +13,7 @@
 }
 
 .card-title{
-    color: #808080;
+    color: #ffa500;
 }
 
 .card-img > img {
@@ -28,10 +28,9 @@
 .types {
     display: flex;
     justify-content: center;
-    width: 100px;
     background-color: #ffa31a;
     color: #292929;
-    padding: 2px;
+    padding: 3px 5px;
     margin: 5px;
     border-radius: 20px;
 }

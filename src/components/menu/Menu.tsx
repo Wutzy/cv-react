@@ -11,11 +11,16 @@ interface MenuItem {
 }
 
 const Menu: FunctionComponent = () => {
+
+    const isSelectedMenu = (path: string) => {
+        return window.location.href.endsWith(path) ? true : false; 
+    }
+
     const [menuItems, setMenuItems] = useState<MenuItem[]>([
-        { label: 'Accueil', value: 'Accueil', path: '/', icon: 'home', isSelected: true },
-        { label: 'Experiences', value: 'Experiences', path: '/knowledges', icon: 'dataset', isSelected: false },
-        { label: 'Portfolio', value: 'Portfolio', path: '/Portfolio', icon: 'folder', isSelected: false },
-        { label: 'Contact', value: 'Contact', path: '/contact', icon: 'contacts', isSelected: false}
+        { label: 'Accueil', value: 'Accueil', path: '/', icon: 'home', isSelected: isSelectedMenu('/') },
+        { label: 'Experiences', value: 'Experiences', path: '/knowledges', icon: 'dataset', isSelected: isSelectedMenu('/knowledges')},
+        { label: 'Portfolio', value: 'Portfolio', path: '/Portfolio', icon: 'folder', isSelected: isSelectedMenu('/Portfolio')},
+        { label: 'Contact', value: 'Contact', path: '/contact', icon: 'contacts', isSelected: isSelectedMenu('/contact')}
     ]);
 
     const handleItemClick = (value: string) => {
@@ -24,6 +29,8 @@ const Menu: FunctionComponent = () => {
      }));
      setMenuItems(updatedItems);
     };
+
+
 
     return (
         <div className='col s3 m3'>
