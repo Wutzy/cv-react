@@ -4,16 +4,16 @@
 }
 
 .menu-burger-closed > i {
-    color: lime;
+    color: #808080;
     font-size: 30px;
-    border: solid 2px lime;
+    border: solid 2px #ffa31a;
     border-radius: 10px;
     padding: 5px;
-    background-color: black;
+
 }
 
 .menu-item > a {
-    color: #00FF00;
+    color: #808080;
 }
 
 .menu-burger-open {
@@ -27,9 +27,17 @@
     display:none;    
 }
 
+.material-icons {
+    color: #808080;
+}
+
 .selected > a {
     text-decoration: underline;
     padding: 5px;
+    color: #ffa31a;
+}
+.selected > .material-icons {
+    color: #ffa31a;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -40,9 +48,8 @@
         justify-content: space-around;
         height: 100%;
         align-items: start;
-        background-color: black;
         padding: 0 10px 10px 20px;
-        border: #00FF00  solid;
+        border: #ffa31a  solid;
         border-right: none;
         border-radius: 20px 20px 20px 20px;
         margin-right: 20px;
@@ -63,7 +70,7 @@
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        border: #00FF00  2px solid;
+        border: #ffa31a  2px solid;
     }
 
     .menu-item {

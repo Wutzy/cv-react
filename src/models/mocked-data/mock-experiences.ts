@@ -35,7 +35,6 @@ export const EXPERIENCES: Experience[] = [
    date_release: new Date(2018, 7, 30),
 },
 
-
    /** Formations */
 {
    id: 5,

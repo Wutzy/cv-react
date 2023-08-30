@@ -4,7 +4,7 @@
 }
 
 .skill-box, .exp-box {
-    border: 1px solid lime;
+    border: 1px solid #808080;
     border-right: none;
     border-left: none;
     border-radius: 0px 20px 0px 20px;

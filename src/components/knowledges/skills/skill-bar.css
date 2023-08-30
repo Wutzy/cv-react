@@ -5,7 +5,7 @@
     align-items: flex-start;
 }
 .progress-bar-animated {
-    background-color: lime;
+    background-color: #ffa31a;
     opacity: 0.7;
     height: 8px;
     border-radius: 20px;
@@ -15,7 +15,7 @@
 .skill-progress-bar {
     margin-bottom: 10px;
     margin-top: 5px;
-    border: 1px solid lime;
+    border: 1px solid #808080;
     border-radius: 20px;
     height: 10px;
     width: 100%;
