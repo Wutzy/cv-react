@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    background-color: black;
-    border: solid 1px #00FF00;
+    background-color: #00000000;
+    border: solid 1px  	#ffa31a;
     border-radius: 10px;
     height: 350px;
 }
@@ -12,12 +12,16 @@
     cursor: pointer;
 }
 
+.card-title{
+    color: #808080;
+}
+
 .card-img > img {
     object-fit: fill;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: #00FF00 1px  solid;
+    border: #ffa31a 1px  solid;
     margin: 10px;
 }
 
@@ -25,8 +29,8 @@
     display: flex;
     justify-content: center;
     width: 100px;
-    background-color: #00FF00;
-    color: black;
+    background-color: #ffa31a;
+    color: #292929;
     padding: 2px;
     margin: 5px;
     border-radius: 20px;

@@ -4,7 +4,8 @@
 }
 
 .skill-box, .exp-box {
-    border: 1px solid #808080;
+    border: 1px solid #ffa31a;
+    color: #808080;
     border-right: none;
     border-left: none;
     border-radius: 0px 20px 0px 20px;
@@ -12,8 +13,13 @@
 
 }
 
+.exp-item > .row > div {
+    color: #808080;
+}
+
 .xp1, .xp2 {
     display:flex;
     justify-content: flex-end;
+    color: #ffa31a;
 }
 

@@ -3,10 +3,7 @@
     src: url('./fonts/BlackOpsOne-Regular.ttf');
 }
 * {
-    color: #ffa31a;
-    font-weight: bold;
-    font-family: 'Black Ops';
-    
+    font-family: 'Black Ops';  
 }
 
 html {
@@ -18,6 +15,10 @@ html {
     align-items: center;
     justify-content: center;
     padding: 0 50px 0 50px;
+}
+
+h4 {
+    color: #ffa31a;
 }
 
 .content {

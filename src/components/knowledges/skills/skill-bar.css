@@ -6,7 +6,7 @@
 }
 .progress-bar-animated {
     background-color: #ffa31a;
-    opacity: 0.7;
+    opacity: 0.9;
     height: 8px;
     border-radius: 20px;
     -webkit-animation: 2s linear 0s   filling-bar;
