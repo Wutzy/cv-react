@@ -11,7 +11,7 @@ type ExperienceProps = {
 const ExperienceItem: FunctionComponent<ExperienceProps> = ({experience}) => {
     return (
         <div>
-            <p>{experience.name_corporation}: {experience.post_name}</p>                        
+            <p>{experience.name_corporation}: <span className='job-post'>{experience.post_name}</span></p>                        
             <span>De { formatDate(experience.date_entry) +' à ' +  formatDate(experience.date_release)}</span> 
             <span>({getDuration(experience.date_release, experience.date_entry)} mois)</span>        
         </div>

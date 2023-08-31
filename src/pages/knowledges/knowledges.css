@@ -4,11 +4,8 @@
 }
 
 .skill-box {
-    border: 1px solid #ffa31a;
+
     color: #808080;
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
     padding: 10px;
 
 }
@@ -25,5 +22,18 @@
     display:flex;
     justify-content: flex-end;
     color: #ffa31a;
+}
+
+@media only screen and (min-width: 1024px)
+{
+    .skill-box {
+        border: 1px solid #1b1b1b;
+        color: #808080;
+        border-bottom: none;
+        border-top: none;
+        border-left: none;
+        padding: 10px;
+    
+    }
 }
 

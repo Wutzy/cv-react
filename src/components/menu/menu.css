@@ -47,8 +47,7 @@
         justify-content: space-around;
         height: 100%;
         padding: 0 10px;
-        border: #ffa31a  1px solid;
-        border-radius: 20px;
+
         margin-right: 20px;
     }
     
@@ -67,7 +66,7 @@
         width: 150px;
         height: 150px;
         border-radius: 50%;
-        border: #ffa31a  2px solid;
+        border: #ffa31a  1px solid;
     }
 
     .menu-item {
@@ -79,12 +78,7 @@
     .social-media {
         width: 100%;
         display: flex;
-        justify-content: space-around;
-        
+        justify-content: space-around;   
     }
-    .git-logo {
-        display: flex;
-        
-        
-    }
+
 }
