@@ -3,14 +3,18 @@
     margin-bottom: 30px;
 }
 
-.skill-box, .exp-box {
+.skill-box {
     border: 1px solid #ffa31a;
     color: #808080;
-    border-right: none;
+    border-bottom: none;
+    border-top: none;
     border-left: none;
-    border-radius: 0px 20px 0px 20px;
     padding: 10px;
 
+}
+.exp-box {
+    border-right: none;
+    padding-top: 20px;
 }
 
 .exp-item > .row > div {
