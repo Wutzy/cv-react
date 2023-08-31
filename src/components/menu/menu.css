@@ -31,12 +31,14 @@
 }
 
 .selected > a {
-    text-decoration: underline;
     padding: 5px;
     color: #ffa31a;
+    transform: scale(1.2);
 }
 .selected > .material-icons {
     color: #ffa31a;
+    margin-right: 10px;
+    transform: scale(1.2);
 }
 
 @media only screen and (min-width: 1024px) {

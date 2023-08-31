@@ -54,7 +54,7 @@ const Menu: FunctionComponent = () => {
                     <img src={ProfileImage} alt="" className='picture-profile' />
                 </div>
                 {menuItems.map(item => (
-                    <div key={item.value} className={`menu-item ${item.isSelected ? 'selected' : ''}`} onClick={() => handleItemClick(item.value)}>
+                    <div key={item.value} className={`menu-item grow ${item.isSelected ? 'selected' : ''}`} onClick={() => handleItemClick(item.value)}>
                         <i className='material-icons'>{item.icon}</i><Link to={item.path}>{item.label}</Link>
                     </div>
                 ))} 
