@@ -11,13 +11,9 @@ const SkillPannel:FunctionComponent<SkillProps> = ({skills, title}) => {
 
     return (
         <div>
-            <div className='row'>
-                <div className='col s12'>
-                    <h4>_{title}</h4> 
-                </div>        
-            </div>
             <div className='skill-box'>
-                <div className="row">
+                <h4>_{title}</h4>   
+                <div className="row">       
                     <div className="col s6 xp1">
                         1 an
                     </div>
@@ -26,7 +22,7 @@ const SkillPannel:FunctionComponent<SkillProps> = ({skills, title}) => {
                      </div>
                 </div>
                 <div className='row'>
-                    <div className="col s11">
+                    <div className="col s12">
                         {skills.map(skill => (
                             <SkillBar key={skill.id} skill={skill} /> 
                         ))}

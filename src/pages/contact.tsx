@@ -3,7 +3,7 @@ import Carte from '../components/contact-card';
 
 const Contact: FunctionComponent = () => {
     return (
-        <div className='center'>
+        <div className='row center'>
            <Carte 
             titre="Developpeur FRONT-END"
             nom="Matmati"

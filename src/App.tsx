@@ -10,6 +10,7 @@ import ProjectDetails from './pages/project-details/project-details';
 import './style.css';
 
 
+
 const App : FunctionComponent = () => {
   return (
     <Router>
@@ -25,7 +26,6 @@ const App : FunctionComponent = () => {
             <Route path="*" element={<PageNotFound />} />
           </Routes>          
         </div>
-
       </div>
     </Router>
 

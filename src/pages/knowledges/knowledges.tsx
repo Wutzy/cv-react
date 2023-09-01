@@ -12,14 +12,18 @@ const Knowledges: FunctionComponent = () => {
     return (
         <div>
             <div className="row">
-                <div className="col s12 m6 languages">
-                    <SkillPannel skills = {LanguageSkills} title='Languages & Outils'/>
-                    <ExperiencesPannel title='Formation' experienceType = 'formation'/>
+                <div className="col s12 m5 languages">
+                    <SkillPannel skills = {LanguageSkills} title='Skills'/>
                 </div>
-                <div className='col s12 m6 others'>
+                <div className='col s12 m7 experiences'>
                 <ExperiencesPannel title='Experiences' experienceType = 'job'/>
                 </div>
-            </div>               
+            </div>  
+            <div className="row">
+                <div className="col s12 m6 formation">
+                    <ExperiencesPannel title='Formation' experienceType = 'formation'/>
+                </div>
+            </div>             
         </div>
     );
 };
