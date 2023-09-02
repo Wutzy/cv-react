@@ -1,7 +1,8 @@
 import { FunctionComponent, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './menu.css';
-import ProfileImage from './randy.jpg';
+import ContactCard from '../contact-card';
+import ProfileImage from '../../medias/randy.jpg';
 
 
 interface MenuItem {
@@ -51,7 +52,14 @@ const Menu: FunctionComponent = () => {
             </div>
             <div className='menu-desktop'>
                 <div className='profil-picture'>
-                    <img src={ProfileImage} alt="" className='picture-profile' />
+                <ContactCard 
+                    titre="Developpeur FRONT-END"
+                    nom="Matmati"
+                    prenom="Anis"
+                    telephone='06 ** ** ** 10'
+                    adresse="MARSEILLE 5°, FRANCE"
+                    email="MATMATI.ANIS@GMAIL.COM"
+                />
                 </div>
                 {menuItems.map(item => (
                     <div key={item.value} className={`menu-item grow ${item.isSelected ? 'selected' : ''}`} onClick={() => handleItemClick(item.value)}>

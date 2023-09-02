@@ -1,10 +1,10 @@
 import { FunctionComponent } from 'react';
-import Carte from '../components/contact-card';
+import ContactCard from '../components/contact-card';
 
 const Contact: FunctionComponent = () => {
     return (
         <div className='row center'>
-           <Carte 
+           <ContactCard 
             titre="Developpeur FRONT-END"
             nom="Matmati"
             prenom="Anis"

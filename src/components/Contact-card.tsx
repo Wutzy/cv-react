@@ -1,7 +1,8 @@
 
-import React from "react";
+import { FunctionComponent } from "react";
+import './contact-card.css'
 
-interface CarteProps {
+interface Props {
     prenom: string;
     nom: string;
     titre: string;
@@ -10,16 +11,15 @@ interface CarteProps {
     email: string;
 }
 
-const Carte: React.FunctionComponent<CarteProps> = ({ prenom, nom, titre, adresse, telephone, email }) => {
+const ContactCard: FunctionComponent<Props> = ({ prenom, nom, titre, adresse, telephone, email }) => {
     return (
-        <div className="carte">
-            <h2>{prenom} {nom}</h2>
-            <p>{titre}</p>
-            <p>{adresse}</p>
-            <p>Tèl: {telephone}</p>
-            <p>Email: {email}</p>
+        <div className="contact-card">
+            <h4>{prenom} {nom}</h4>
+            <p><i className="material-icons">location_on</i>{adresse}</p>
+            <p><i className="material-icons">phone_in_talk</i>{telephone}</p>
+            <p><i className="material-icons">mail</i>{email}</p>
         </div>
     )
 }
 
-export default Carte;
+export default ContactCard;

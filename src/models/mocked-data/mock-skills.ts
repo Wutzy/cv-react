@@ -14,31 +14,31 @@ export const SKILLS: Skill[] = [
     type: "language"
  },
  {
-    id: 2,
+    id: 3,
     name: "JavaScript",
     xp: 75,
     type: "language"
  },
  {
-    id: 3,
+    id: 4,
     name: "React",
     xp: 25,
     type: "language"
  },
  {
-    id: 4,
+    id: 5,
     name: "TypeScript",
     xp: 8,
     type: "language"
  },
 {
-   id: 5,
+   id: 6,
    name: "phpMyAdmin",
    xp: 10,
    type: "language"
 },
 {
-   id: 6,
+   id: 7,
    name: "Composer",
    xp: 10,
    type: "language"

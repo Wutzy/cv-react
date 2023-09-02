@@ -1,0 +1,8 @@
+.contact-card > p {
+    display:flex;
+    align-items: center;
+}
+.contact-card > p > i {
+    color: #ffa31a;
+    margin-right: 10px;
+}
