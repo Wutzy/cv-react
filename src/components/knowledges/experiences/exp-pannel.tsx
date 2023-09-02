@@ -20,16 +20,16 @@ const ExperiencesPannel: FunctionComponent<ExperienceProps> = ({experienceType, 
     return (
         <div>
             <div className="exp-box">
-                <h4>_{title}</h4> 
+                <h4>_{title}</h4>
                 <div className="row">
                     <div className="col s12 exp-list">
                                 {experiences.map(experience => (
                                 <div className='exp-item'>
-                                    <ExperienceItem experience = {experience} />
+                                    <ExperienceItem key = {experience.id} experience = {experience} />
                                 </div>
                                 ))}
                     </div>
-                </div>             
+                </div>
             </div>
 
         </div>

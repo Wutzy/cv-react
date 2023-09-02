@@ -3,7 +3,7 @@
     src: url('./fonts/static/Nunito-Light.ttf');
 }
 * {
-    font-family: 'Nunito';  
+    font-family: 'Nunito';
     color: #808080;
 }
 
@@ -22,7 +22,7 @@ h4 {
     flex-direction: column;
     justify-content: center;
     background-color: #292929;
-    padding: 65px 0 0 0;       
+    padding: 65px 0 0 0;
 }
 
 .container {
@@ -35,26 +35,20 @@ h4 {
     margin-bottom: 0;
 }
 
-.grow { 
-    transition: all .2s ease-in-out; 
-    }
-    
-.grow:hover { 
-    transform: scale(1.1); 
+.grow {
+    transition: all .2s ease-in-out;
     }
 
-.download-icon {
-        border: 3px solid #ffa31a;
-        border-radius: 20px;
-        padding: 5px;
+.grow:hover {
+    transform: scale(1.1);
     }
 
-@media only screen and (min-width: 768px) {   
+@media only screen and (min-width: 768px) {
 
     .content {
-        min-height: 800px;
-        padding: 50px 0px 0px 50px; 
-        border-left: 1px solid #1b1b1b;     
+        min-height: 700px;
+        padding: 50px 0px 0px 50px;
+        border-left: 1px solid #1b1b1b;
     }
 }
 

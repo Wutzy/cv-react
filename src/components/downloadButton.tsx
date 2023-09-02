@@ -6,10 +6,10 @@ interface Props  {
 
 const DownloadButton:FunctionComponent<Props> = ({selectedFile}) => {
     return (
-        <div className="center">
+        <div className="download-icon center">
             <a href={selectedFile} target="_blank" rel="noreferrer">
-                <i className='material-icons download-icon'>download</i>
-            </a>    
+                <i className='material-icons'>download</i>
+            </a>
         </div>
     );
 };
