@@ -16,7 +16,7 @@ const Home: FunctionComponent = () => {
                         et ses différents languages.</p>
                         <p>Suite à une formation en Javascript, je suis depuis apprennant
                             autodidacte en recherche d'une première entreprise avec laquelle je pourrai m'épanouir et consolider
-                            mon savoir-faire et ma bonne humeur à ma future équipe !</p>
+                            mon savoir-faire et apoorter ma bonne humeur à ma future équipe !</p>
                         <p>Etant junior j'ai hâte de pouvoir apprendre des developpeurs expérimentés/seniors et en apprendre plus.</p>
                         <p className='center'>Pour télécharger mon CV en format PDF, c'est par ici :</p>
                         <DownloadButton selectedFile = {myCV} />
