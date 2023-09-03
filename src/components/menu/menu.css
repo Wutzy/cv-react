@@ -54,20 +54,24 @@
         margin-left: 0;
     }
 
+    .menu-item > a {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
     .material-icons {
         color: #808080;
-
     }
 
     .selected > a {
-        padding: 5px;
         color: #ffa31a;
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
-    .selected > .material-icons {
+    .selected > a > .material-icons {
         color: #ffa31a;
-
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
     .social-media {
