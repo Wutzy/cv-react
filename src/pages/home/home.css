@@ -1,3 +1,24 @@
+.profil-picture {
+    display: flex;
+    justify-content: center;
+}
+
+.profil-picture > img {
+    margin-top: 10px;
+    object-fit: fill;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: #ffa31a  1px solid;
+}
+
+.description{
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #1b1b1b;
+}
+
 .download-icon > a > .material-icons {
     animation: shaking 5s infinite;
     border: 3px solid #ffa31a;
@@ -8,13 +29,6 @@
 .download-icon > a > .material-icons:hover{
     background-color: #ffa31a;
     color:#1b1b1b;
-}
-
-.description{
-    margin-bottom: 50px;
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #1b1b1b;
 }
 
 @keyframes shaking {
