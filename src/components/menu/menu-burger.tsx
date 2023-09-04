@@ -25,31 +25,32 @@ const MenuBurger: FunctionComponent = () => {
         const updatedItems = menuItems.map(item => ({...item,
         isSelected: item.value === value
      }));
+     closeMenuBurger();
      setMenuItems(updatedItems);
     };
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isMenuBurgerOpen, setIsMenuBurgerOpen] = useState(false);
 
-    const openMenu = () => {
-        setIsMenuOpen(true);
+    const openMenuBurger = () => {
+        setIsMenuBurgerOpen(true);
     }
-    const closeMenu = () => {
-        setIsMenuOpen(false);
+    const closeMenuBurger = () => {
+        setIsMenuBurgerOpen(false);
     }
 
     return (
         <div className='menu-burger'>
-            <div className= {`menu-burger-closed ${isMenuOpen ? 'hidden' : ''}`} onClick={openMenu}>
+            <div className= {`menu-burger-closed ${isMenuBurgerOpen ? 'hidden' : ''}`} onClick={openMenuBurger}>
                 <i className="material-icons">menu</i>
             </div>
-            <div className={`menu-burger-open ${isMenuOpen ? '' : 'hidden'}`}>
-                <div className='close-icon' onClick={closeMenu}>
+            <div className={`menu-burger-open ${isMenuBurgerOpen ? '' : 'hidden'}`}>
+                <div className='close-icon' onClick={closeMenuBurger}>
                     <i className="material-icons ">close</i>
                 </div>
 
                 {menuItems.map(item => (
                     <div key={item.value} className={`menu-item ${item.isSelected ? 'selected' : ''}`} onClick={() => handleItemClick(item.value)}>
-                        <Link to={item.path}>{item.label}</Link>
+                        <Link to={item.path}><i className='material-icons'>{item.icon}</i>{item.label}</Link>
                     </div>
                 ))}
             </div>
