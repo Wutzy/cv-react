@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cv-react/static/css/main.3292889d.css",
-    "main.js": "/cv-react/static/js/main.8eefb2e2.js",
+    "main.js": "/cv-react/static/js/main.2d5904ad.js",
     "static/media/Nunito-Light.ttf": "/cv-react/static/media/Nunito-Light.0ec468f65958d1263b60.ttf",
     "static/media/CV.pdf": "/cv-react/static/media/CV.6a6b16ef4268b3ee6df1.pdf",
     "index.html": "/cv-react/index.html",
     "main.3292889d.css.map": "/cv-react/static/css/main.3292889d.css.map",
-    "main.8eefb2e2.js.map": "/cv-react/static/js/main.8eefb2e2.js.map"
+    "main.2d5904ad.js.map": "/cv-react/static/js/main.2d5904ad.js.map"
   },
   "entrypoints": [
     "static/css/main.3292889d.css",
-    "static/js/main.8eefb2e2.js"
+    "static/js/main.2d5904ad.js"
   ]
 }
