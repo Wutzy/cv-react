@@ -1,20 +1,13 @@
 export default class Experience {
 
-    id: number;
-    type: string;
-    name_corporation: string;
-    post_name: string;
-    date_entry: Date;
-    date_release: Date;
-     
     constructor(
-     id: number,
-     type: string = "jobtype",
-     name_corporation: string = 'string',
-     post_name: string = 'string',
-     date_entry: Date = new Date(),
-     date_release: Date = new Date(),
-    ) 
+     public id: number,
+     public type: string = "job type",
+     public name_corporation: string = 'string',
+     public post_name: string = 'string',
+     public date_entry: Date = new Date(),
+     public date_release: Date = new Date(),
+    )
 
     {
      this.id = id;

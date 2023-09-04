@@ -20,7 +20,6 @@ h4 {
     min-height: 400px;
     width: 100%;
     flex-direction: column;
-    justify-content: center;
     background-color: #292929;
     padding: 65px 0 0 0;
 }

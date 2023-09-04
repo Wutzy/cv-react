@@ -1,16 +1,11 @@
 export default class Skill {
 
-    id: number;
-    name: string;
-    xp: number;
-    type: string;
-     
     constructor(
-     id: number,
-     name: string = '...',
-     xp: number,
-     type: string
-    ) 
+     public id: number,
+     public name: string = '...',
+     public xp: number,
+     public type: string
+    )
 
     {
      this.id = id;

@@ -1,4 +1,4 @@
-import React, { FunctionComponent, useState, useEffect } from 'react';
+import { FunctionComponent, useState, useEffect } from 'react';
 import ProjectCard from '../components/portfolio/project-card';
 import Project from '../models/project';
 import PROJECTS from '../models/mocked-data/mock-projects';
@@ -14,7 +14,7 @@ const Portfolio: FunctionComponent = () => {
         <div>
             <div className='row'>
             {projects.map(project => (
-                <ProjectCard key={project.id} project={project} />                
+                <ProjectCard key={project.id} project={project} />
             ))}
             </div>
         </div>

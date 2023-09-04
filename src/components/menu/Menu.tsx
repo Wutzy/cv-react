@@ -1,8 +1,8 @@
 import { FunctionComponent, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './menu.css';
-import ContactCard from '../contact-card';
-import ProfileImage from '../../medias/randy.jpg';
+import ContactCard from '../contact-card/contact-card';
+import MenuBurger from './menu-burger';
 
 
 interface MenuItem {
@@ -12,7 +12,6 @@ interface MenuItem {
     icon: string;
     isSelected: boolean;
 }
-
 
 const Menu: FunctionComponent = () => {
 
@@ -38,18 +37,7 @@ const Menu: FunctionComponent = () => {
 
     return (
         <div className='col s3 m3'>
-            <div className='menu-burger'>
-                <div className='menu-burger-open'>
-                    {menuItems.map(item => (
-                        <div key={item.value} className={`menu-item ${item.isSelected ? 'selected' : ''}`} onClick={() => handleItemClick(item.value)}>
-                            <Link to={item.path}>{item.label}</Link>
-                        </div>
-                    ))}
-                </div>
-                <div className='menu-burger-closed'>
-                    <i className="material-icons">menu</i>
-                </div>
-            </div>
+            <MenuBurger />
             <div className='menu-desktop'>
                 <div className='header-menu'>
                 <ContactCard
