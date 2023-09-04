@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cv-react/static/css/main.3292889d.css",
-    "main.js": "/cv-react/static/js/main.050ececb.js",
-    "static/media/Nunito-Light.ttf": "/cv-react/static/media/Nunito-Light.0ec468f65958d1263b60.ttf",
-    "static/media/CV.pdf": "/cv-react/static/media/CV.6a6b16ef4268b3ee6df1.pdf",
-    "index.html": "/cv-react/index.html",
-    "main.3292889d.css.map": "/cv-react/static/css/main.3292889d.css.map",
-    "main.050ececb.js.map": "/cv-react/static/js/main.050ececb.js.map"
+    "main.css": "/static/css/main.eba59f2a.css",
+    "main.js": "/static/js/main.af87c937.js",
+    "static/media/Nunito-Light.ttf": "/static/media/Nunito-Light.0ec468f65958d1263b60.ttf",
+    "static/media/CV.pdf": "/static/media/CV.6a6b16ef4268b3ee6df1.pdf",
+    "index.html": "/index.html",
+    "main.eba59f2a.css.map": "/static/css/main.eba59f2a.css.map",
+    "main.af87c937.js.map": "/static/js/main.af87c937.js.map"
   },
   "entrypoints": [
-    "static/css/main.3292889d.css",
-    "static/js/main.050ececb.js"
+    "static/css/main.eba59f2a.css",
+    "static/js/main.af87c937.js"
   ]
 }
