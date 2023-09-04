@@ -1,34 +1,61 @@
-import React from 'react';
+import { FunctionComponent, useState } from 'react';
+import { Link } from 'react-router-dom';
+interface MenuItem {
+    label: string;
+    value: string;
+    path: string;
+    icon: string;
+    isSelected: boolean;
+}
 
-const MenuBurger = () => {
+const MenuBurger: FunctionComponent = () => {
+
+    const isSelectedMenu = (path: string) => {
+        return window.location.href.endsWith(path) ? true : false;
+    }
+
+    const [menuItems, setMenuItems] = useState<MenuItem[]>([
+        { label: 'Accueil', value: 'Accueil', path: '/', icon: 'home', isSelected: isSelectedMenu('/') },
+        { label: 'Experiences', value: 'Experiences', path: '/knowledges', icon: 'dataset', isSelected: isSelectedMenu('/knowledges')},
+        { label: 'Portfolio', value: 'Portfolio', path: '/portfolio', icon: 'folder', isSelected: isSelectedMenu('/portfolio')},
+        { label: 'Contact', value: 'Contact', path: '/contact', icon: 'contacts', isSelected: isSelectedMenu('/contact')}
+    ]);
+
+    const handleItemClick = (value: string) => {
+        const updatedItems = menuItems.map(item => ({...item,
+        isSelected: item.value === value
+     }));
+     setMenuItems(updatedItems);
+    };
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const openMenu = () => {
+        setIsMenuOpen(true);
+    }
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    }
+
     return (
-        <div>
-
-            <nav className="navbar navbar-light light-blue lighten-4">
-
-                <button className="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="dark-blue-text">
-                        <i className="fas fa-bars fa-1x"></i>
-                    </span>
-                </button>
-
-                <div className="collapse navbar-collapse" id="navbarSupportedContent1">
-                    <ul className="navbar-nav mr-auto">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Features</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#">Pricing</a>
-                        </li>
-                    </ul>
+        <div className='menu-burger'>
+            <div className= {`menu-burger-closed ${isMenuOpen ? 'hidden' : ''}`} onClick={openMenu}>
+                <i className="material-icons">menu</i>
+            </div>
+            <div className={`menu-burger-open ${isMenuOpen ? '' : 'hidden'}`}>
+                <div className='close-icon' onClick={closeMenu}>
+                    <i className="material-icons ">close</i>
                 </div>
-                
-            </nav>
 
+                {menuItems.map(item => (
+                    <div key={item.value} className={`menu-item ${item.isSelected ? 'selected' : ''}`} onClick={() => handleItemClick(item.value)}>
+                        <Link to={item.path}>{item.label}</Link>
+                    </div>
+                ))}
+            </div>
         </div>
+
+
     );
 };
 

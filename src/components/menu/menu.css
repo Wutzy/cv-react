@@ -1,9 +1,19 @@
-.menu-desktop, .menu-burger-open {
+.hidden {
+    display: none;
+}
+.menu-desktop {
     display:none;
 }
-.menu-burger {
+.menu-burger-closed, .menu-burger-open {
     position:absolute;
-    margin: 10px 0 0 10px;
+}
+.menu-burger-open{
+    width: 150px;
+    background-color: black;
+    z-index: 99;
+    border: solid 2px #ffa31a;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .menu-burger-closed > i {
@@ -16,6 +26,24 @@
 
 .menu-item > a {
     color: #808080;
+    display: flex;
+    width: 80%;
+}
+.selected > a {
+    color: #ffa31a;
+    transform: scale(1.1);
+    padding-left: 5px;
+}
+
+.selected > a > .material-icons {
+    color: #ffa31a;
+    transform: scale(1.1);
+}
+
+.close-icon {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -47,15 +75,6 @@
     .material-icons {
         color: #808080;
         margin-right: 20px;
-    }
-
-    .selected > a {
-        color: #ffa31a;
-        transform: scale(1.1);
-    }
-    .selected > a > .material-icons {
-        color: #ffa31a;
-        transform: scale(1.1);
     }
 
     .social-media {

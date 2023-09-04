@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import './skill-bar.css';
 import Skill from "../../../models/skill";
 
-type SkillProps = {
+interface SkillProps {
     skill: Skill;
 }
 
@@ -16,7 +16,7 @@ const SkillBar: FunctionComponent<SkillProps> = ({skill}) => {
                 <div className="skill-progress-bar">
                     <div className="bla" style={{ width: skill.xp + '%' }}>
                         <div className="progress-bar-animated">
-                        </div>                    
+                        </div>
                     </div>
                 </div>
             </div>
