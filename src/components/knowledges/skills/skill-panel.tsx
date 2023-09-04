@@ -7,13 +7,13 @@ type SkillProps = {
     title: string;
 }
 
-const SkillPannel:FunctionComponent<SkillProps> = ({skills, title}) => {
+const SkillPanel:FunctionComponent<SkillProps> = ({skills, title}) => {
 
     return (
         <div>
             <div className='skill-box'>
-                <h4>_{title}</h4>   
-                <div className="row">       
+                <h4>_{title}</h4>
+                <div className="row">
                     <div className="col s6 xp1">
                         1 an
                     </div>
@@ -24,13 +24,13 @@ const SkillPannel:FunctionComponent<SkillProps> = ({skills, title}) => {
                 <div className='row'>
                     <div className="col s12">
                         {skills.map(skill => (
-                            <SkillBar key={skill.id} skill={skill} /> 
+                            <SkillBar key={skill.id} skill={skill} />
                         ))}
-                    </div>        
+                    </div>
                 </div>
-            </div>            
+            </div>
         </div>
     );
 };
 
-export default SkillPannel;
+export default SkillPanel;

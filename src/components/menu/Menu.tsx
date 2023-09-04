@@ -1,7 +1,7 @@
 import { FunctionComponent, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './menu.css';
-import ContactCard from '../contact-card';
+import ContactCard from '../contact-card/contact-card';
 import MenuBurger from './menu-burger';
 
 
@@ -12,7 +12,6 @@ interface MenuItem {
     icon: string;
     isSelected: boolean;
 }
-
 
 const Menu: FunctionComponent = () => {
 

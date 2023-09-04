@@ -1,4 +1,5 @@
 import { FunctionComponent } from "react";
+import './downloadButton.css';
 
 interface Props  {
     selectedFile: string;

@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Knowledges from './pages/knowledges/knowledges';
 import Portfolio from './pages/portfolio';
 import Contact from './pages/contact';
-import Menu from './components/menu/Menu';
+import Menu from './components/menu/menu';
 import PageNotFound from './pages/page-not-found';
 import ProjectDetails from './pages/project-details/project-details';
 import './style.css';
@@ -24,7 +24,7 @@ const App : FunctionComponent = () => {
             <Route path = "/portfolio/:id" element={<ProjectDetails />}/>
             <Route path = "/contact" element={<Contact />}/>
             <Route path="*" element={<PageNotFound />} />
-          </Routes>          
+          </Routes>
         </div>
       </div>
     </Router>

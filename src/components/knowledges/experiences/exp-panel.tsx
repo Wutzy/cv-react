@@ -8,13 +8,13 @@ type ExperienceProps = {
     title: string;
 }
 
-const ExperiencesPannel: FunctionComponent<ExperienceProps> = ({experienceType, title}) => {
+const ExperiencesPanel: FunctionComponent<ExperienceProps> = ({experienceType, title}) => {
 
-    const [experiences, setExepriences] = useState<Experience[]>([]);
+    const [experiences, setExperiences] = useState<Experience[]>([]);
 
     useEffect(() => {
         let jobExperience  = EXPERIENCES.filter((experience) => experience.type === experienceType);
-        setExepriences(jobExperience);
+        setExperiences(jobExperience);
     }, [experienceType]);
 
     return (
@@ -24,9 +24,7 @@ const ExperiencesPannel: FunctionComponent<ExperienceProps> = ({experienceType, 
                 <div className="row">
                     <div className="col s12 exp-list">
                                 {experiences.map(experience => (
-                                <div className='exp-item'>
-                                    <ExperienceItem key = {experience.id} experience = {experience} />
-                                </div>
+                                    <ExperienceItem key={experience.id} experience={experience} />
                                 ))}
                     </div>
                 </div>
@@ -36,4 +34,4 @@ const ExperiencesPannel: FunctionComponent<ExperienceProps> = ({experienceType, 
     );
 };
 
-export default ExperiencesPannel;
+export default ExperiencesPanel;
