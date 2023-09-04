@@ -20,7 +20,7 @@ const Menu: FunctionComponent = () => {
     }
 
     const [menuItems, setMenuItems] = useState<MenuItem[]>([
-        { label: 'Accueil', value: 'Accueil', path: '/cv-react/', icon: 'home', isSelected: isSelectedMenu('/cv-react/') },
+        { label: 'Accueil', value: 'Accueil', path: '/', icon: 'home', isSelected: isSelectedMenu('/') },
         { label: 'Experiences', value: 'Experiences', path: '/knowledges', icon: 'dataset', isSelected: isSelectedMenu('/knowledges')},
         { label: 'Portfolio', value: 'Portfolio', path: '/portfolio', icon: 'folder', isSelected: isSelectedMenu('/portfolio')},
         { label: 'Contact', value: 'Contact', path: '/contact', icon: 'contacts', isSelected: isSelectedMenu('/contact')}

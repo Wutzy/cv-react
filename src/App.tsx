@@ -18,6 +18,7 @@ const App : FunctionComponent = () => {
         <Menu />
         <div className="content">
           <Routes>
+            <Route path = "/" element={<Home />}/>
             <Route path = "/cv-react/" element={<Home />}/>
             <Route path = "/knowledges" element={<Knowledges />}/>
             <Route path = "/portfolio" element={<Portfolio />}/>
