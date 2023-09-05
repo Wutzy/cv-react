@@ -12,7 +12,7 @@ const Portfolio: FunctionComponent = () => {
     }, [])
     return (
         <div>
-            <div className='row'>
+            <div className='row project-box'>
             {projects.map(project => (
                 <ProjectCard key={project.id} project={project} />
             ))}

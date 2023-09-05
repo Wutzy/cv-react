@@ -55,7 +55,7 @@
     color: #ffa31a;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
 
     .menu-burger {
         display:none;
