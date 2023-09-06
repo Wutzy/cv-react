@@ -6,7 +6,8 @@ export default class Project {
      public name: string = '...',
      public picture: string = 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/XXX.png',
      public types: Array<string> = ['HTML'],
-     public description: string = '...'
+     public description: string = '...',
+     public ghPages: string = '...'
     ) {
      // 2. Initialisation des propiétés d'un Projet.
      this.id = id;
@@ -14,5 +15,6 @@ export default class Project {
      this.picture = picture;
      this.types = types;
      this.description = description;
+     this.ghPages = ghPages;
     }
    }

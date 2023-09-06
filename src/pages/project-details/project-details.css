@@ -1,5 +1,9 @@
 .project-details-techno {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+}
+
+.project-details-img {
+    width: 100%;
+    height: 500px;
 }

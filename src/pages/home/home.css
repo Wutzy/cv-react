@@ -45,6 +45,9 @@
     .home-box {
         min-height: 500px;
     }
+    .container {
+        width: 85%;
+    }
     .profile-picture {
         position: absolute;
         top: -50px;

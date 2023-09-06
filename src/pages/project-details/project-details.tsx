@@ -22,15 +22,24 @@ const ProjectDetails: FunctionComponent = () => {
       return (
         <div>
             { project ? (
-                <div className="center">
-                    <img src={project.picture} alt={project.name} />
-                    <h4>{project.name}</h4>
-                    <ul className="project-details-techno">
-                        {project.types.map(type => (
-                          <li key={type} className='types'>{type}</li>
-                        ))}
-                    </ul>
-                    <p className="project-details-description">{project.description}Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, provident!</p>
+                <div className="project-details">
+                    <div className="row">
+                      <div className="col s12 m7">
+                        <img src={project.picture} alt={project.name} className="project-details-img" />
+                      </div>
+                      <div className="col s12 m5">
+                        <h4 className="center">{project.name}</h4>
+                        <p className="project-details-description">{project.description}</p>
+                        <p>Technologies utilisées: </p>
+                        <ul className="project-details-techno">
+                          {project.types.map(type => (
+                            <li key={type} className='types'>{type}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+
+
                 </div>
 
             ) : (

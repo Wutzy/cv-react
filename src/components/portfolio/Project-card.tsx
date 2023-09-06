@@ -1,4 +1,4 @@
-import React, { FunctionComponent } from 'react';
+import { FunctionComponent } from 'react';
 import Project from '../../models/project';
 import './project-card.css'
 import { Link } from 'react-router-dom';
@@ -13,11 +13,11 @@ const ProjectCard: FunctionComponent<Props> = ({project}) => {
     return (
         <div className='col s12 m4'>
             <Link to={`/portfolio/${project.id}`}>
+
                 <div className='card'>
-                    <div className='card-title'>{project.name}</div>
-                    <div className='card-img'>
-                        <img src={project.picture} alt={project.name} />
+                    <div className='card-background' style={{backgroundImage: `url(${project.picture})`}}>
                     </div>
+                    <div className='card-title'>{project.name}</div>
                     <div className='card-stacked'>
                         <div className='card-content'>
                             <ul>
