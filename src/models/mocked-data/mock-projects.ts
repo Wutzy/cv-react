@@ -12,42 +12,48 @@ export const PROJECTS: Project[] = [
   name: "Booki",
   picture: BookiImg,
   types: ["#HTML", "#CSS"],
-  description: "..."
+  description: "...",
+  ghPages: ""
  },
  {
   id: 2,
   name: "Oh My Food",
   picture: OhMyFoodImg,
   types: ["#HTML", "#CSS"],
-  description: "..."
+  description: "...",
+  ghPages: "https://wutzy.github.io/projet3/"
  },
  {
   id: 3,
   name: "Game On",
   picture: GameOn,
   types: ["#HTML", "#CSS", "#JavaScript"],
-  description: "..."
+  description: "...",
+  ghPages: ""
  },
  {
    id: 4,
    name: "Fisheye",
    picture: Fisheye,
    types: ["#HTML", "#CSS", "#JavaScript", "Accessibility"],
-   description: "..."
+   description: "...",
+   ghPages: ""
   },
  {
    id: 5,
    name: "Les Petits Plats",
    picture: PetitsPlats,
    types: ["#HTML", "#CSS", "#Javascript"],
-   description: "..."
+   description: "...",
+   ghPages: ""
 },
 {
    id: 6,
    name: "Pokédex",
    picture: "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/009.png",
    types: ["#HTML", "#CSS", "#TypeScript", "#React"],
-   description: "..."
+   description: "...",
+   ghPages: ""
 }
 ];
 
