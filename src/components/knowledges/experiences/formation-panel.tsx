@@ -1,13 +1,13 @@
 import { FunctionComponent, useEffect, useState } from 'react';
 import Experience from '../../../models/experience';
 import EXPERIENCES from '../../../models/mocked-data/mock-experiences';
-import ExperienceItem from './exp-item';
+import FormationItem from './formation-item';
 
 type ExperienceProps = {
     experienceType: string;
 }
 
-const ExperiencesPanel: FunctionComponent<ExperienceProps> = ({experienceType}) => {
+const FormationsPanel: FunctionComponent<ExperienceProps> = ({experienceType}) => {
 
     const [experiences, setExperiences] = useState<Experience[]>([]);
 
@@ -18,11 +18,11 @@ const ExperiencesPanel: FunctionComponent<ExperienceProps> = ({experienceType}) 
 
     return (
             <div className="knowledges-box">
-                <h4>_Expériences</h4>
+                <h4>_Formations</h4>
                 <div className="row">
                     <div className="col s12 exp-list">
                                 {experiences.map(experience => (
-                                    <ExperienceItem key={experience.id} experience={experience} />
+                                    <FormationItem key={experience.id} experience={experience} />
                                 ))}
                     </div>
                 </div>
@@ -30,4 +30,4 @@ const ExperiencesPanel: FunctionComponent<ExperienceProps> = ({experienceType}) 
     );
 };
 
-export default ExperiencesPanel;
+export default FormationsPanel;

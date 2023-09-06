@@ -1,14 +1,5 @@
-
-.s12 > h4 {
-    margin-bottom: 30px;
-}
-
-.skill-box {
-    padding: 10px;
-    color: #808080;
-}
-.exp-box {
-    padding-top: 10px;
+.knowledges-box {
+    margin-bottom: 50px;
 }
 
 .xp1, .xp2 {
@@ -18,18 +9,10 @@
 }
 
 
-@media only screen and (min-width: 1024px)
+@media only screen and (min-width: 992px)
 {
-
-    .row > .languages {
-    padding-left: 30px;
-    }
     .row > .experiences{
         padding-left: 30px;
     }
-    .exp-box {
-        padding-left: 30px;
-    }
-
 }
 

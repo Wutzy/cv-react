@@ -1,5 +1,5 @@
 import Skill from '../skill';
-   
+
 export const SKILLS: Skill[] = [
  {
     id: 1,
@@ -22,7 +22,7 @@ export const SKILLS: Skill[] = [
  {
     id: 4,
     name: "React",
-    xp: 25,
+    xp: 30,
     type: "language"
  },
  {
@@ -33,16 +33,16 @@ export const SKILLS: Skill[] = [
  },
 {
    id: 6,
-   name: "phpMyAdmin",
-   xp: 10,
+   name: "Wordpress",
+   xp: 20,
    type: "language"
 },
 {
    id: 7,
-   name: "Composer",
-   xp: 10,
+   name: "PHP7",
+   xp: 20,
    type: "language"
 }
 ];
-  
+
 export default SKILLS;

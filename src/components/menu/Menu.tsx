@@ -36,16 +36,16 @@ const Menu: FunctionComponent = () => {
 
 
     return (
-        <div className='col s3 m3'>
+        <div>
             <MenuBurger />
             <div className='menu-desktop'>
                 <div className='header-menu'>
                 <ContactCard
-                    titre="Developpeur FRONT-END"
-                    nom="Matmati"
-                    prenom="Anis"
-                    telephone='06 ** ** ** 10'
-                    adresse="MARSEILLE 5°, FRANCE"
+                    title="Développeur FRONT-END"
+                    lastName="Matmati"
+                    firstName="Anis"
+                    phone='06 ** ** ** 10'
+                    address="MARSEILLE 5°, FRANCE"
                     email="MATMATI.ANIS@GMAIL.COM"
                 />
                 </div>

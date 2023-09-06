@@ -6,6 +6,7 @@
 }
 .menu-burger-closed, .menu-burger-open {
     position:absolute;
+
 }
 .menu-burger-open{
     font-size: 20px;
@@ -38,7 +39,6 @@
 .selected > a {
     color: #ffa31a;
     transform: scale(1.1);
-    padding-left: 5px;
 }
 
 .selected > a > .material-icons {
@@ -59,14 +59,13 @@
 
     .menu-burger {
         display:none;
-        }
+    }
 
     .menu-desktop {
         display:flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        height: 100%;
-        padding: 0 10px;
+        justify-content: space-between;
+        min-height: 500px;
         margin-right: 20px;
         font-size: 20px;
     }

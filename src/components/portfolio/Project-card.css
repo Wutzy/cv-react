@@ -3,15 +3,16 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
+    margin-top: unset;
     background-color: #292929;
     border: solid 1px  	#1b1b1b;
     border-radius: 10px;
     height: 350px;
-    transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
 }
 .card:hover {
     cursor: pointer;
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 .card-title{

@@ -1,20 +1,68 @@
 .profile-picture {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    top: -60px;
+    left: 40%;
 }
 
-.profile-picture > img {
-    margin-top: 10px;
-    object-fit: fill;
-    width: 150px;
-    height: 150px;
+.profile-picture > img  {
     border-radius: 50%;
     border: #ffa31a  1px solid;
+    object-fit: fill;
+    width: 100px;
+    height: 100px;
 }
 
 .description{
-    margin-bottom: 50px;
     padding: 20px;
+    width:60%;
+}
+
+.description:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 10px 10px 0;
+    width: 40%;
+    height: 100%;
+    opacity: 0.2;
+    background-image: url('../../medias/randy.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+}
+.home-box {
+    position: relative;
+    display: flex;
+    border: 1px solid #1b1b1b;
     border-radius: 10px;
-    background-color: #1b1b1b;
+    padding: unset !important;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .home-box {
+        min-height: 500px;
+    }
+    .profile-picture {
+        position: absolute;
+        top: -50px;
+        left: 45%;
+    }
+    .profile-picture > img  {
+        border-radius: 50%;
+        border: #ffa31a  1px solid;
+        object-fit: fill;
+        transform: scale(1.2);
+    }
+}
+@media only screen and (max-width: 500px) {
+
+    .description:before {
+        display:none;
+    }
+    .description{
+        width:100%;
+    }
 }

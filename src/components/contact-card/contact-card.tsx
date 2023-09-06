@@ -3,20 +3,21 @@ import { FunctionComponent } from "react";
 import './contact-card.css'
 
 interface Props {
-    prenom: string;
-    nom: string;
-    titre: string;
-    adresse: string;
-    telephone: string;
-    email: string;
+    firstName?: string;
+    lastName?: string;
+    title?: string;
+    address?: string;
+    phone?: string;
+    email?: string;
 }
 
-const ContactCard: FunctionComponent<Props> = ({ prenom, nom, titre, adresse, telephone, email }) => {
+const ContactCard: FunctionComponent<Props> = ({ firstName, lastName, title, address, phone, email }) => {
     return (
         <div className="contact-card">
-            <h4>{prenom} {nom}</h4>
-            <p><i className="material-icons">location_on</i>{adresse}</p>
-            <p><i className="material-icons">phone_in_talk</i>{telephone}</p>
+            <h4>{firstName} {lastName}</h4>
+            <p>{title}</p>
+            <p><i className="material-icons">location_on</i>{address}</p>
+            <p><i className="material-icons">phone_in_talk</i>{phone}</p>
             <p><i className="material-icons">mail</i>{email}</p>
         </div>
     )

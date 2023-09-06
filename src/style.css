@@ -21,42 +21,40 @@ h4 {
     width: 100%;
     flex-direction: column;
     background-color: #292929;
-    padding: 65px 0 0 0;
+    padding: 50px 0 0 0;
 }
 
 .container {
     display: flex;
     justify-content: center;
-    padding: 20px 0;
+    padding-top: 25px;
 }
 
 .row {
     margin-bottom: 0;
 }
 
-.grow {
-    transition: all .2s ease-in-out;
-    }
-
-.grow:hover {
-    transform: scale(1.1);
-    }
-
 @media only screen and (min-width: 992px) {
 
-    .project-box{
-        padding-top: 20px;
-        padding-left: 30px;
-    }
-    .container {
-        width: 85%;
+    h4 {
+        margin-top: unset;
     }
     .content {
         min-height: 850px;
-        padding: 50x 0px 0px 50px;
         border-left: 1px solid #1b1b1b;
+        padding: 0 0 0 20px;
     }
+    .container {
+        display: flex;
+    }
+    .grow {
+        transition: all .2s ease-in-out;
+        }
 
+    .grow:hover {
+        transform: scale(1.1);
+        z-index: 99;
+    }
 
 }
 

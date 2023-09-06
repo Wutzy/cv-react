@@ -10,8 +10,7 @@ type SkillProps = {
 const SkillPanel:FunctionComponent<SkillProps> = ({skills, title}) => {
 
     return (
-        <div>
-            <div className='skill-box'>
+            <div className='knowledges-box'>
                 <h4>_{title}</h4>
                 <div className="row">
                     <div className="col s6 xp1">
@@ -29,7 +28,6 @@ const SkillPanel:FunctionComponent<SkillProps> = ({skills, title}) => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 };
 

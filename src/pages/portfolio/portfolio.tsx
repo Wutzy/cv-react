@@ -1,7 +1,8 @@
 import { FunctionComponent, useState, useEffect } from 'react';
-import ProjectCard from '../components/portfolio/project-card';
-import Project from '../models/project';
-import PROJECTS from '../models/mocked-data/mock-projects';
+import ProjectCard from '../../components/portfolio/project-card';
+import Project from '../../models/project';
+import PROJECTS from '../../models/mocked-data/mock-projects';
+import './portfolio.css';
 
 const Portfolio: FunctionComponent = () => {
 

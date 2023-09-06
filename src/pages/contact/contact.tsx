@@ -1,15 +1,12 @@
 import { FunctionComponent } from 'react';
-import ContactCard from '../components/contact-card/contact-card';
+import ContactCard from '../../components/contact-card/contact-card';
 
 const Contact: FunctionComponent = () => {
     return (
         <div className='row center'>
            <ContactCard
-            titre="Developpeur FRONT-END"
-            nom="Matmati"
-            prenom="Anis"
-            telephone='06 ** ** ** 10'
-            adresse="Marseille"
+            phone='06 ** ** ** 10'
+            address="Marseille"
             email="matmati.anis@gmail.com"
            />
         </div>
