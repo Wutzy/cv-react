@@ -10,6 +10,9 @@
     height: 350px;
     transition: all .2s ease-in-out;
 }
+.card:hover {
+    z-index: 99;
+}
 .card-background {
     display: block;
     position: absolute;
@@ -40,6 +43,7 @@
     display: flex;
     justify-content: center;
     background-color: #ffa31a;
+    border: #1b1b1b 1px solid;
     color: #292929;
     padding: 3px 15px;
     margin: 5px;

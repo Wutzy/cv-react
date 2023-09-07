@@ -1,9 +1,39 @@
+.project-details {
+    border: 1px #ffa31a solid;
+    border-radius: 10px;
+    background-color:#1b1b1b;
+}
+
+.imgProject {
+
+    height: 400px;
+    padding: 0px !important;
+}
+.imgProject > img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.descriptionProject {
+
+}
+
+.project-links > a {
+    font-size: 18px;
+    color: #ffa31a;
+}
 .project-details-techno {
     display: flex;
     flex-wrap: wrap;
 }
 
-.project-details-img {
-    width: 100%;
-    height: 500px;
+
+@media only screen and (min-width: 600px) {
+    .imgProject {
+        height: 500px;
+    }
+    .imgProject > img {
+        border-radius: 10px 0 0 10px;
+    }
 }
