@@ -11,7 +11,7 @@ const Knowledges: FunctionComponent = () => {
 
     return (
         <div>
-            <div className="row">
+            <div className="row knowledges">
                 <div className="col s12 m5 languages">
                     <SkillPanel skills = {LanguageSkills} title='Skills'/>
                 </div>
@@ -19,8 +19,8 @@ const Knowledges: FunctionComponent = () => {
                     <ExperiencesPanel  experienceType = 'job'/>
                 </div>
             </div>
-            <div className="row">
-                <div className="col s12 m6 formation">
+            <div className="row knowledges">
+                <div className="col s12 m5 formation">
                     <FormationsPanel experienceType = 'formation'/>
                 </div>
             </div>

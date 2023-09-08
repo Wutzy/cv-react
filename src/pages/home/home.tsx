@@ -1,7 +1,6 @@
 import { FunctionComponent } from 'react';
 import myCV from '../../medias/CV.pdf';
 import DownloadButton from '../../components/download-button/downloadButton';
-import profileImg from '../../medias/randy.jpg';
 import './home.css';
 
 

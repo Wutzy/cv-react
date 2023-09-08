@@ -13,7 +13,7 @@ export const PROJECTS: Project[] = [
   picture: BookiImg,
   types: ["#HTML", "#CSS"],
   description: "...",
-  ghPages: ""
+  ghPages: "https://wutzy.github.io/Booki/"
  },
  {
   id: 2,
@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
   picture: GameOn,
   types: ["#HTML", "#CSS", "#JavaScript"],
   description: "...",
-  ghPages: ""
+  ghPages: "https://wutzy.github.io/GameOn/"
  },
  {
    id: 4,
@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
    picture: Fisheye,
    types: ["#HTML", "#CSS", "#JavaScript", "Accessibility"],
    description: "...",
-   ghPages: ""
+   ghPages: "https://wutzy.github.io/Front-End-Fisheye/"
   },
  {
    id: 5,

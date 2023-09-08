@@ -41,7 +41,6 @@ const ProjectDetails: FunctionComponent = () => {
                   </div>
                 </div>
               </div>
-
             ) : (
                 <h4>Pas de projet trouver.</h4>
 
