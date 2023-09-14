@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/cv-react/static/css/main.17622a6b.css",
-    "main.js": "/cv-react/static/js/main.1be491cf.js",
+    "main.css": "/cv-react/static/css/main.524c6d32.css",
+    "main.js": "/cv-react/static/js/main.f6c38a30.js",
     "static/media/gameon.jpg": "/cv-react/static/media/gameon.7b2b91e93fe25c3d9ddf.jpg",
     "static/media/fisheye.jpg": "/cv-react/static/media/fisheye.655f3d18574a3f0ccb14.jpg",
-    "static/media/ohmyfood.jpg": "/cv-react/static/media/ohmyfood.879e45ffbcee7a1e3e8d.jpg",
     "static/media/Nunito-Light.ttf": "/cv-react/static/media/Nunito-Light.0ec468f65958d1263b60.ttf",
+    "static/media/ohmyfood.jpg": "/cv-react/static/media/ohmyfood.f529a6dcbeb19d4b4af7.jpg",
     "static/media/booki.jpg": "/cv-react/static/media/booki.4ae7af21be0b7637406b.jpg",
     "static/media/lespetitsplats.jpg": "/cv-react/static/media/lespetitsplats.60ee4d2207af73b4971f.jpg",
     "static/media/CV.pdf": "/cv-react/static/media/CV.6a6b16ef4268b3ee6df1.pdf",
     "static/media/randy.jpg": "/cv-react/static/media/randy.b6ed001d585d6b517ad6.jpg",
     "index.html": "/cv-react/index.html",
-    "main.17622a6b.css.map": "/cv-react/static/css/main.17622a6b.css.map",
-    "main.1be491cf.js.map": "/cv-react/static/js/main.1be491cf.js.map"
+    "main.524c6d32.css.map": "/cv-react/static/css/main.524c6d32.css.map",
+    "main.f6c38a30.js.map": "/cv-react/static/js/main.f6c38a30.js.map"
   },
   "entrypoints": [
-    "static/css/main.17622a6b.css",
-    "static/js/main.1be491cf.js"
+    "static/css/main.524c6d32.css",
+    "static/js/main.f6c38a30.js"
   ]
 }
