@@ -5,8 +5,6 @@
 }
 
 .imgProject {
-
-    height: 400px;
     padding: 0px !important;
 }
 .imgProject > img {
@@ -14,9 +12,6 @@
     height: 100%;
     width: 100%;
     border-radius: 10px 10px 0 0;
-}
-.descriptionProject {
-
 }
 
 .project-links > a {
@@ -30,10 +25,14 @@
 
 
 @media only screen and (min-width: 600px) {
-    .imgProject {
-        height: 500px;
-    }
     .imgProject > img {
         border-radius: 10px 0 0 10px;
     }
+    .imgProject {
+        height: 600px;
+    }
+    .descriptionProject {
+        height: 600px;
+    }
+
 }

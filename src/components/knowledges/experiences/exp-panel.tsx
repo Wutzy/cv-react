@@ -19,8 +19,8 @@ const ExperiencesPanel: FunctionComponent<ExperienceProps> = ({experienceType}) 
     return (
             <div className="knowledges-box">
                 <h4>_Expériences</h4>
-                <div className="row">
-                    <div className="col s12 exp-list">
+                <div>
+                    <div className="exp-list">
                                 {experiences.map(experience => (
                                     <ExperienceItem key={experience.id} experience={experience} />
                                 ))}
