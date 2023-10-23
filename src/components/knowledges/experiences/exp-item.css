@@ -10,6 +10,6 @@
     border-bottom: none;
 }
 
-.job-post {
+.job-post, .date_color {
     color: #ffa31a;
 }

@@ -10,13 +10,15 @@
     height: 350px;
     transition: all .2s ease-in-out;
 }
+
 .card:hover {
     z-index: 99;
 }
+
 .card-background {
     display: block;
     position: absolute;
-    opacity: 0.2;
+    opacity: 0;
     border-radius: 10px;
     right: 0;
     top: 0;
@@ -26,9 +28,14 @@
     background-position: 50% 0;
     background-size: cover;
 }
+
+.card-background:hover {
+    opacity: 0.2;
+
+}
 .card:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .card-title{

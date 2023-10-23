@@ -17,8 +17,8 @@ export const EXPERIENCES: Experience[] = [
    name_corporation: 'CERTICALL',
    post_name: 'Conseiller Multimédia',
    description: "Traitement des appels entrants, dépannage à distance",
-   date_entry: new Date(2022, 11, 1),
-   date_release: new Date(2023, 1, 28),
+   date_entry: new Date(2016, 10, 1),
+   date_release: new Date(2018, 8, 28),
 },
 {
    id: 3,

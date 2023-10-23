@@ -13,7 +13,7 @@ const ExperienceItem: FunctionComponent<ExperienceProps> = ({experience}) => {
         <div className='exp-item'>
             <p>{experience.name_corporation}: <span className='job-post'>{experience.post_name}</span></p>
             <p>{experience.description}</p>
-            <span>De { formatDate(experience.date_entry) +' à ' +  formatDate(experience.date_release)}</span>
+            <span className='date_color'>De { formatDate(experience.date_entry) +' à ' +  formatDate(experience.date_release) + ' '}</span>
             <span>({getDuration(experience.date_release, experience.date_entry)} mois)</span>
         </div>
     );
