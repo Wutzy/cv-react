@@ -4,14 +4,16 @@ export default class Project {
     constructor(
      public id: number,
      public name: string = '...',
-     public picture: string = 'https://assets.pokemon.com/assets/cms2/img/pokedex/detail/XXX.png',
-     public types: Array<string> = ['HTML'],
+     public logo: string = '...',
+     public picture: string = '...',
+     public types: Array<string> = ['HTML', 'CSS'],
      public description: string = '...',
      public ghPages: string = '...'
     ) {
      // 2. Initialisation des propiétés d'un Projet.
      this.id = id;
      this.name = name;
+     this.logo = logo;
      this.picture = picture;
      this.types = types;
      this.description = description;

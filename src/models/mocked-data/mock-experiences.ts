@@ -2,17 +2,27 @@ import Experience from '../experience';
 
 export const EXPERIENCES: Experience[] = [
    /** Jobs */
- {
-    id: 1,
+{
+      id: 1,
+      type: 'job',
+      name_corporation: 'Alicia Locks',
+      post_name: 'Intégrateur web',
+      date_entry: new Date(2021, 8, 1),
+      description: 'Création du site vitrine "alicialocks.fr"',
+      date_release: new Date(2021, 10, 30),
+},
+{
+    id: 2,
     type: 'job',
     name_corporation: 'Win-Win',
     post_name: 'Développeur Back-End',
     description: 'Intégration de maquettes, création de bases de données',
-    date_entry: new Date(2023, 0, 1),
-    date_release: new Date(2023, 0, 30),
- },
+    date_entry: new Date(2020, 8, 1),
+    date_release: new Date(2020, 11, 30),
+},
+
  {
-   id: 2,
+   id: 3,
    type: 'job',
    name_corporation: 'CERTICALL',
    post_name: 'Conseiller Multimédia',
@@ -20,15 +30,7 @@ export const EXPERIENCES: Experience[] = [
    date_entry: new Date(2016, 10, 1),
    date_release: new Date(2018, 8, 28),
 },
-{
-   id: 3,
-   type: 'job',
-   name_corporation: 'Alicia Locks',
-   post_name: 'Intégrateur web',
-   date_entry: new Date(2021, 8, 1),
-   description: 'Création du site vitrine "alicialocks.fr"',
-   date_release: new Date(2021, 10, 30),
-},
+
 
    /** Formations */
 {
