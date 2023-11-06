@@ -22,7 +22,11 @@ const SkillPanel:FunctionComponent<SkillProps> = ({skills, title}) => {
                 </div>
                 <div className='row'>
                     <div className="col s12">
-                        {skills.map(skill => (
+                        {skills
+                        .sort(function (a, b) {
+                            return b.xp - a.xp;
+                        })
+                        .map(skill => (
                             <SkillBar key={skill.id} skill={skill} />
                         ))}
                     </div>

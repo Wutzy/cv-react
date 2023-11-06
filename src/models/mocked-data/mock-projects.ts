@@ -81,7 +81,7 @@ export const PROJECTS: Project[] = [
    picture: AliciaLocksSite,
    types: ["#HTML", "#CSS", "#Wordpress"],
    description: "Site vitrine réalisé pour une graphiste freelance dans le but de présenter ses différents projets et prestations. Pour le realiser j'ai utilisé le CMS Wordpress avec son plugin Elementor pour la mise en page.",
-   ghPages: "",
+   ghPages: "https://alicialocks.fr/",
    gitHubRepo: ""
 }
 ];

@@ -8,7 +8,8 @@ export default class Project {
      public picture: string = '...',
      public types: Array<string> = ['HTML', 'CSS'],
      public description: string = '...',
-     public ghPages: string = '...'
+     public ghPages: string = '...',
+     public gitHubRepo: string = '...'
     ) {
      // 2. Initialisation des propiétés d'un Projet.
      this.id = id;
@@ -18,5 +19,6 @@ export default class Project {
      this.types = types;
      this.description = description;
      this.ghPages = ghPages;
+     this.gitHubRepo = gitHubRepo;
     }
    }

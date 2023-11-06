@@ -34,7 +34,7 @@ export const SKILLS: Skill[] = [
 {
    id: 6,
    name: "Wordpress",
-   xp: 20,
+   xp: 30,
    type: "language"
 },
 {
@@ -42,7 +42,7 @@ export const SKILLS: Skill[] = [
    name: "PHP7",
    xp: 55,
    type: "language"
-}
+},
 {
    id: 8,
    name: "MySQL",
