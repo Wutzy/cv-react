@@ -28,7 +28,7 @@ export const SKILLS: Skill[] = [
  {
     id: 5,
     name: "TypeScript",
-    xp: 8,
+    xp: 10,
     type: "language"
  },
 {
@@ -40,7 +40,13 @@ export const SKILLS: Skill[] = [
 {
    id: 7,
    name: "PHP7",
-   xp: 40,
+   xp: 55,
+   type: "language"
+}
+{
+   id: 8,
+   name: "MySQL",
+   xp: 55,
    type: "language"
 }
 ];
