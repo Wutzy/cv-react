@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cv-react/static/css/main.fced24ad.css",
-    "main.js": "/cv-react/static/js/main.f2ee2d82.js",
+    "main.js": "/cv-react/static/js/main.5ecf7267.js",
     "static/media/1.jpg": "/cv-react/static/media/1.5dc372cdbd24e029af2d.jpg",
     "static/media/aliciaLocks.jpg": "/cv-react/static/media/aliciaLocks.3d767d10088841608656.jpg",
     "static/media/gameOn.jpg": "/cv-react/static/media/gameOn.7b2b91e93fe25c3d9ddf.jpg",
@@ -10,14 +10,14 @@
     "static/media/ohMyFood.jpg": "/cv-react/static/media/ohMyFood.f529a6dcbeb19d4b4af7.jpg",
     "static/media/booki.jpg": "/cv-react/static/media/booki.4ae7af21be0b7637406b.jpg",
     "static/media/lesPetitsPlats.jpg": "/cv-react/static/media/lesPetitsPlats.60ee4d2207af73b4971f.jpg",
-    "static/media/CV.pdf": "/cv-react/static/media/CV.f4bd7f58b020b60035cb.pdf",
+    "static/media/CV.pdf": "/cv-react/static/media/CV.d4a4702b41e7adad132f.pdf",
     "static/media/fishEye.png": "/cv-react/static/media/fishEye.951d8b0a7fbc4aad9a62.png",
     "index.html": "/cv-react/index.html",
     "main.fced24ad.css.map": "/cv-react/static/css/main.fced24ad.css.map",
-    "main.f2ee2d82.js.map": "/cv-react/static/js/main.f2ee2d82.js.map"
+    "main.5ecf7267.js.map": "/cv-react/static/js/main.5ecf7267.js.map"
   },
   "entrypoints": [
     "static/css/main.fced24ad.css",
-    "static/js/main.f2ee2d82.js"
+    "static/js/main.5ecf7267.js"
   ]
 }
