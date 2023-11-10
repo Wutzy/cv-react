@@ -40,7 +40,7 @@ const Menu: FunctionComponent = () => {
             <div className='menu-desktop'>
                 <div className='header-menu'>
                 <ContactCard
-                    title="Développeur FRONT-END"
+                    title=""
                     lastName="Matmati"
                     firstName="Anis"
                     phone='06 ** ** ** 10'
