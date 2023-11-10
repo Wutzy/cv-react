@@ -1,6 +1,6 @@
 import { FunctionComponent } from 'react';
 import Experience from '../../../models/experience';
-import './exp-item.css';
+import '../experiences/exp-item.css'
 
 type ExperienceProps = {
     experience: Experience;

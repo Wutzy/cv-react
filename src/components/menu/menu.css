@@ -63,7 +63,6 @@
 
     .menu-desktop {
         display:flex;
-        padding-top: 10px;
         flex-direction: column;
         justify-content: space-between;
         height: 730px;

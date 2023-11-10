@@ -2,7 +2,7 @@ import { FunctionComponent } from 'react';
 import Experience from '../../../models/experience';
 import getDuration from '../../../helpers/get-duration';
 import formatDate from '../../../helpers/format-date';
-import './exp-item.css';
+import '../experiences/exp-item.css';
 
 type ExperienceProps = {
     experience: Experience;
