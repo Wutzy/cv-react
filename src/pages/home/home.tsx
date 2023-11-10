@@ -18,10 +18,11 @@ const Home: FunctionComponent = () => {
                             Les différents échanges entretenus m'ont appris à traiter les objections avec diplomatie et rigueur.
                         </p>
                         <p>
-                        Actuellement en recherche d'une entreprise avec laquelle je pourrai m'épanouir et consolider
+                        Actuellement en recherche d'une entreprise avec laquelle je pourrai m'épanouir, consolider
                         mon savoir-faire et apporter ma bonne humeur à ma future équipe !
                         </p>
-                        <p className='center'>Pour télécharger mon CV en format PDF, c'est par ici :</p>
+                        <p className='center'>Pour télécharger mon CV en format PDF interactif, c'est par ici :</p>
+                        <p className='center'>(cliquez sur un projet pour le voir)</p>
                         <DownloadButton selectedFile = {myCV} />
                     </div>
                 </div>
