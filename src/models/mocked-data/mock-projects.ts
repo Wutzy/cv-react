@@ -61,8 +61,8 @@ export const PROJECTS: Project[] = [
    picture: PetitsPlatsSite,
    types: ["#HTML", "#CSS", "#Javascript"],
    description: "L'objectif était de créer une page web responsive pour un site de recettes de cuisine, en utilisant une maquette fournie comme guide. Pour faciliter la recherche de recettes, j'ai développé un algorithme en JavaScript. J'ai utilisé les technologies HTML, CSS, Sass, JavaScript et Bootstrap pour concevoir une page web esthétique, fonctionnelle et facile à naviguer. Ce projet m'a permis de renforcer mes compétences en développement front-end, en particulier en algorithmie pour la recherche de recettes.",
-   ghPages: "",
-   gitHubRepo: ""
+   ghPages: "https://github.com/Wutzy/Les-Petits-Plats",
+   gitHubRepo: "https://github.com/Wutzy/Les-Petits-Plats"
 },
 {
    id: 6,
@@ -72,7 +72,7 @@ export const PROJECTS: Project[] = [
    types: ["#HTML", "#CSS", "#TypeScript", "#React"],
    description: "Ce projet m'a permis de m'initier à Typescript via la création d'un Pokedex developpé grâce à la librairie React. J'ai pu suivre un tutoriel vidéo pour mener à bien les différentes étapes. Le but était surtout de m'initier et de voir un exemmple d'utilisation de Typescript/React.",
    ghPages: "https://github.com/Wutzy/Reactmon",
-   gitHubRepo: ""
+   gitHubRepo: "https://github.com/Wutzy/Reactmon"
 },
 {
    id: 7,
@@ -82,7 +82,7 @@ export const PROJECTS: Project[] = [
    types: ["#HTML", "#CSS", "#Wordpress"],
    description: "Site vitrine réalisé pour une graphiste freelance dans le but de présenter ses différents projets et prestations. Pour le realiser j'ai utilisé le CMS Wordpress avec son plugin Elementor pour la mise en page.",
    ghPages: "https://alicialocks.fr/",
-   gitHubRepo: ""
+   gitHubRepo: "https://alicialocks.fr/"
 }
 ];
 

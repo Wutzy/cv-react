@@ -29,7 +29,7 @@ const ProjectDetails: FunctionComponent = () => {
                 </div>
                 <div className="col m6 descriptionProject">
                   <h4 className="project-title">{project.name}</h4>
-                  <p className="project-links"><Link to={project.ghPages} target="_blank">Site</Link> - <Link to={project.ghPages}>Github</Link></p>
+                  <p className="project-links"><Link to={project.ghPages} target="_blank">Site</Link> - <Link to={project.gitHubRepo}>Github</Link></p>
                   <p className="project-description">{project.description}</p>
                   <div className="project-tech">
                     <p>Technologies utilisées:</p>
